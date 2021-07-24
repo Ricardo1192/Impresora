@@ -1,13 +1,13 @@
-
+package Clases;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DatosImpresoras {
+public  class DatosImpresoras {
     public DatosImpresoras(){
 
     }
-    private List<Impresora> impresoras= new ArrayList<Impresora>();
+    private static List<Impresora> impresoras= new ArrayList<Impresora>();
 
     public List<Impresora> consultaImpresoras( ){
         return impresoras;
@@ -18,6 +18,10 @@ public class DatosImpresoras {
                 return impresora;
             }
         }
+        return null;
+    }
+    public void crearImpresora(String serial,String marca, Boolean escaner){
+        impresoras.add(new Impresora(serial,marca,escaner));
     }
         
 

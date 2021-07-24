@@ -1,4 +1,4 @@
-
+package Clases;
 
 public class Impresora {
     private String serial;
